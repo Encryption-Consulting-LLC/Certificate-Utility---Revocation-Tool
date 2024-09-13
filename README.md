@@ -7,14 +7,14 @@
 This document provides a comprehensive user guide for the Certificate Revocation Tool. This application simplifies the process of revoking certificates listed in a CSV file. It offers a user-friendly interface to guide you through the steps, displays progress during revocation and deletion, and provides detailed logs for successful and failed attempts.
 
 - This application will check for valid certificates provided from a .csv file. Operations will be performed only on valid active certificates.
-- The script will prompt the user to confirm if they want to revoke/delete the certificates found form the .csv file.
-- The script will also display the progress of the operations while they are underway, and maintain a detailed log for operations being performed.
+- The script will prompt the user to confirm if they want to revoke/delete the certificates found from the .csv file.
+- The script will also display the progress of the operations while they are underway and maintain a detailed log of the operations being performed.
 
 ### 1.2 Prerequisites
 
 - CertUtil must be installed on the system where the application is being run.
-- Ensure to take a snapshot or backup of the VM prior to running the application or performing defragmentation of the CA database.
-- Domain Administrator account is required for using this application.
+- Be sure to take a snapshot or backup of the VM before running the application or defragmenting the CA database.
+- A Domain Administrator account is required to use this application.
 - Application must be executed on the Certification Authority.
 - Active Directory domain services must be online.
 
@@ -33,7 +33,7 @@ Double-click the CertificateUtility_Revoke.exe file to launch the application. T
 
 ### 2.2 Select the CSV File
 
-Click on ‘Browse’ button. The application will prompt you to select a CSV file containing certificate information. The expected format should have a necessary column "Serial Number".
+Click on the ‘Browse’ button. The application will prompt you to select a CSV file containing certificate information. The expected format should have a necessary column "Serial Number".
 
 ### 2.3 Review Certificate List
 
@@ -43,7 +43,7 @@ Once you select the CSV file, the application will display details about the cer
 
 ### 2.4 Proceed to Revocation
 
-Click the "Next" button to proceed with the revocation process. The application will prompt you to confirm the operation.
+Click the "Next" button to proceed with the revocation process. Just so you know – the application will prompt you to confirm the operation.
 
 ### 2.5 Initiate Revocation
 
@@ -65,11 +65,11 @@ Select the checkbox labeled "Proceed to Delete after Revocation" (if available) 
 
 ### 2.8 Initiate Deletion (Optional)
 
-Click the "Next" button to proceed with the deletion process after revocation is complete.
+Click the "Next" button to proceed with the deletion process after the revocation is complete.
 
 ### 2.9 Start Certificate Deletion (Optional)
 
-Click the "Start" button (if presented) to initiate the deletion of revoked certificates. The progress bar and log will update to reflect the deletion process. The log box will display the status of each certificate deletion attempt. Messages will indicate success or failure for each certificate deletion.
+Click the "Start" button (if presented) to initiate the deletion of revoked certificates. The progress bar and log will be updated to reflect the deletion process. The log box will display the status of each certificate deletion attempt. Messages will indicate success or failure for each certificate deletion.
 
 ![Deletion Progress](https://github.com/Encryption-Consulting-LLC/Certificate-Utility---Revocation-Tool/assets/159181390/e4616e40-fa23-4238-970c-3b6a9e6061ff)
 
